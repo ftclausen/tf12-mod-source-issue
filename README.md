@@ -1,3 +1,18 @@
+# SOLVED
+
+It turns out I need to specify a double slash, `//`, **from the calling code** not at the module level. So `service1`
+needs a double slash after the base directory containing all modules
+
+```
+terraform {
+  source = "../../../../..//modules/example1"
+}
+```
+
+Here it being `//modules` the slash being at the repo base.
+
+# Previous description
+
 ## What is this?
 
 This is a contrived, minimal project to reproduce an issue with terragrunt not copying transitive modules present in the
