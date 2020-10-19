@@ -1,7 +1,3 @@
-#dependencies {
-#  paths = ["../sibling1", "../sibling2"]
-#}
-
 dependency "sibling1" {
   config_path = "../sibling1"
 }
