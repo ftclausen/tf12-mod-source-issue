@@ -3,5 +3,5 @@ dependency "sibling1" {
 }
 
 dependency "sibling2" {
-  config_path = "../sibling2
+  config_path = "../sibling2"
 }
