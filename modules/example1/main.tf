@@ -8,3 +8,9 @@ module "sibling2_mod" {
 
 variable "input1" {
 }
+
+variable "collection" {
+  description = "A collection"
+  default = ["something", "else"]
+  type = list
+}
