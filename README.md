@@ -29,8 +29,9 @@ dependencies. In this repo `service1` uses `modules/example1` that in turn depen
 1. Install Terraform (12.x series, we use v0.12.26) and Terragrunt (v0.25.4 - grabbed latest release as of this writing)
 2. Clone this repo
 3. `cd accounts/account1/earth/dev/service1`
-4. Run `terragrunt init`
-5. Observe `Unable to evaluate directory symlink: lstat ../sibling1: no such file or directory`
+4. `export ACCOUNT=account1 ; export REGION=earth ; export ENVIRONMENT=dev`
+5. Run `terragrunt init`
+6. Observe `Unable to evaluate directory symlink: lstat ../sibling1: no such file or directory`
 
 ## Layout
 
